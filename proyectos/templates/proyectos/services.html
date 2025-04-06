@@ -1,0 +1,110 @@
+{% extends "proyectos/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<section>
+    
+    <h1 class="my-0 fw-bold h1 py-3 text-center tx-color-3 bg-color-1">Servicios</h1>
+    
+    <section class="bg-color-2">
+        <nav class="py-2 container text-center">
+            <ul class="fw-semibold nav text-1 row">
+                <li class="nav-item col-12 col-lg-4">
+                    <a class="link-light nav-link" href="#article1">Trabajos Academícos</a>
+                </li>
+                <li class="nav-item col-12 col-lg-4">
+                    <a class="link-light nav-link" href="#article2">Asesoría de Tesis</a>
+                </li>
+                <li class="nav-item col-12 col-lg-4">
+                    <a class="link-light nav-link" href="#article3">Desarrollo de Tesis</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <article class="bg-color-3 tx-color-1" id="article1">
+        
+        <div class="container text-center">
+
+            <div class="align-items-center py-5 row justify-content-center">
+
+                <div class="col-11 col-md-7">
+                    <h2 class="fw-bold h2">Trabajos Academícos</h2>
+                    <ul class="lh-lg mt-5 text-1 text-start">
+                        <li>Elaboración de: Deberes Universitarios, Ensayos, Resúmenes, 
+                            Investigaciones, Artículos Científicos y Proyectos</li>
+                        <li>Mapas Mentales y Conceptuales</li>
+                        <li>Presentaciones Power Point</li>
+                        <li>Nuevos Servicios de: Etiquetas, Collages, Infografías 
+                            interactivas, Tarjetas Virtuales, Certificados, Sitio Web, 
+                            Creación y Edición de Vídeos, Calendarios, Ebooks, Menús, 
+                            Intitaciones Interactivas</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-5">
+                    <img class="img-fluid img-serv-page" src="{% static 'proyectos/images/graficos.jpg' %}" alt="Hojas con gráficos">
+                </div>
+
+            </div>
+
+          </div>
+
+    </article>
+
+    <article class="bg-color-2 tx-color-3" id="article2">
+        
+      <div class="container text-center">
+
+          <div class="align-items-center py-5 row justify-content-center">
+
+              <div class="col-11 col-md-7 order-md-5">
+                  <h2 class="h2 fw-bold ">Asesoría de Tesis</h2>
+                  <ul class="lh-lg mt-4 text-1 text-start">
+                      <li>Asesorías Metodológicas  y de Contenido</li>
+                      <li>Corrección y Aplicación de Normas</li>
+                      <li>Levantamiento de Observaciones</li>
+                      <li>Elaboración de Presentaciones</li>
+                  </ul>
+              </div>
+
+              <div class="col-6 col-md-5">
+                  <img class="img-fluid img-serv-page" src="{% static 'proyectos/images/analisis-estadistico.jpg' %}" alt="Hojas con gráficos">
+              </div>
+
+          </div>
+
+        </div>
+
+  </article>
+
+  <article class="bg-color-1 tx-color-3" id="article3">
+        
+    <div class="container text-center">
+
+        <div class="align-items-center py-5 row justify-content-center">
+
+            <div class="col-11 col-md-7">
+                <h2 class="h2 fw-bold">Desarrollo de Tesis - Servicio Plus</h2>
+                <ul class="lh-lg mt-5 text-1 text-start">
+                    <li>Propuesta de Tema (si así lo deseas)</li>
+                    <li>Desarrollo, Estructuración y Redacción del Trabajo de Grado</li>
+                    <li>Levantamiento de Observaciones</li>
+                    <li>Elaboración de Presentación y Borrador de Defensa / Sustentación</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-5">
+                <img class="img-fluid img-serv-page" src="{% static 'proyectos/images/titulo-y-birrete.jpg' %}" alt="Manos sosteniendo Titulo y birrete">
+            </div>
+
+        </div>
+
+      </div>
+
+  </article>
+
+</section>
+
+{% endblock %}
